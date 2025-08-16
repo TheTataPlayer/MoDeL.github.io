@@ -113,7 +113,19 @@
       <button onclick="checkAnswer(this, false)">การปฏิรูปการศึกษา</button>
     </section>
 
-    <section>
+        <section>
       <p>5. วัตถุประสงค์ของการจัดงานวันสันติภาพไทยคือข้อใด?</p>
-      <button onclick="checkAnswer(this, false)">เฉลิมฉลองการขึ้นครองราชย์</button>
-      <button onclick="checkAnswer(this, true)">
+      <button onclick="checkAnswer(this,false)">เฉลิมฉลองการขึ้นครองราชย์</button>
+      <button onclick="checkAnswer(this,true)">รำลึกและเผยแพร่ความสำคัญของสันติภาพ</button>
+      <button onclick="checkAnswer(this,false)">ประกาศสงครามกับประเทศอื่น</button>
+      <button onclick="checkAnswer(this,false)">เฉลิมฉลองปีใหม่</button>
+    </section>
+
+    <script>
+      function checkAnswer(btn, correct) {
+        btn.classList.add(correct ? 'correct' : 'incorrect');
+        btn.parentElement.querySelectorAll('button').forEach(b => b.disabled = true);
+      }
+    </script>
+  </body>
+</html>
