@@ -23,6 +23,28 @@
              color:blue;}
       button4{background:linear-gradient(red,white);
              color:blue;}
+      section{background:linear-gradient(hotpink,red,white);
+             padding: 15px;
+             margin: 20px auto;
+             width: 80%;
+             border-radius: 10px;}
+      img:hover{animation: glowcolors 1.2s infinite alternate;}
+      @keyframes glowcolors{
+        0% {box-shadow: 0 0 20px pink;}
+        25% {box-shadow: 0 0 20px skyblue;}
+        50% {box-shadow: 0 0 20px gold;}
+        75% {box-shadow: 0 0 20px violet;}
+        100% {box-shadow: 0 0 20px red;}
+      }
+      .blink-bg{
+        animation: blinkbg 1s infinite alternate;
+        padding: 3px 6px;
+        }
+      @keyframe blinkbg
+      {
+        0% {blackground: red;}
+      100% {blackground: white;}
+      }
     </style>
   </head>
   <body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg4rTTUe248rR8X_LeT_4H1ouBYcHVMZ3gkA&s">
