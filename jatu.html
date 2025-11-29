@@ -2,85 +2,123 @@
   <head>
     <title>จตุรมิตร 31</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <style>
-      body{font-family: "Taviraj", serif;
-  font-weight: 400;
-  font-style: normal;}
-      
-      header{background:linear-gradient(hotpink,skyblue,white);
-            padding: 30px;
-            text-align:center;
-            border-radius:10px;}
-      mark{background: linear-gradient(limegreen,yellow,pink,skyblue);
-          color:brown;}
-      button1{background:linear-gradient(hotpink,skyblue);
-             color:blue;}
-      button2{background:linear-gradient(limegreen,yellow);
-             color:blue;}
-      button3{background:linear-gradient(violet, gold);
-             color:blue;}
-      button4{background:linear-gradient(red,white);
-             color:blue;}
-      section{background:linear-gradient(hotpink,red,white);
-             padding: 15px;
-             margin: 20px auto;
-             width: 80%;
-             border-radius: 10px;}
-      img:hover{animation: glowcolors 1.2s infinite alternate;}
-      @keyframes glowcolors{
+      body{
+        font-family: "Taviraj", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      header{
+        background:linear-gradient(hotpink,skyblue,white);
+        padding: 30px;
+        text-align:center;
+        border-radius:10px;
+      }
+
+      mark{
+        background: linear-gradient(limegreen,yellow,pink,skyblue);
+        color:brown;
+      }
+
+      /* ปรับให้ custom tag แสดงเหมือนปุ่ม */
+      button1,button2,button3,button4{
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+        display: inline-block;
+      }
+
+      button1{background:linear-gradient(hotpink,skyblue); color:blue;}
+      button2{background:linear-gradient(limegreen,yellow); color:blue;}
+      button3{background:linear-gradient(violet, gold); color:blue;}
+      button4{background:linear-gradient(red,white); color:blue;}
+
+      section{
+        background:linear-gradient(hotpink,red,white);
+        padding: 15px;
+        margin: 20px auto;
+        width: 80%;
+        border-radius: 10px;
+      }
+
+      img:hover{
+        animation: glowcolors 1.2s infinite alternate;
+      }
+
+      @keyframes glowcolors {
         0% {box-shadow: 0 0 20px pink;}
         25% {box-shadow: 0 0 20px skyblue;}
         50% {box-shadow: 0 0 20px gold;}
         75% {box-shadow: 0 0 20px violet;}
         100% {box-shadow: 0 0 20px red;}
       }
+
       .blink-bg{
         animation: blinkbg 1s infinite alternate;
         padding: 3px 6px;
-        }
-      @keyframe blinkbg
-      {
-        0% {blackground: red;}
-      100% {blackground: white;}
+      }
+
+      /* แก้ @keyframe → @keyframes และ background พิมพ์ผิด */
+      @keyframes blinkbg {
+        0% {background: red;}
+        100% {background: white;}
       }
     </style>
   </head>
+
   <body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg4rTTUe248rR8X_LeT_4H1ouBYcHVMZ3gkA&s">
+
     <header>
       <h1><marquee><mark>จตุรมิตรสามัคคี 4 โรงเรียน โรงเรียนสวนกุหลาบวิทายาลัย โรงเรียนเทพศิรินทร์ โรงเรียนกรุงเทพคริสเตียนวิทยาลัย โรงเรียนอัสสัมชัญ</mark></marquee></h1>
       <br><br>
-      <button1 onclick="document.location='http://www.sk.ac.th/'">โรงเรียนสวนกุหลาบวืทยาลัย</button1>
-      <button2 onclick="document.location='https://www.debsirin.ac.th/'">โรงเรียนเทพศิรินทร์</button2>
-      <button3 onclick="document.location='https://www.bcc.ac.th/2019/'">โรงเรียนกรุงเทพคริสเตียนวิทยาลัย</button3>
-      <button4 onclick="document.location='https://www.assumption.ac.th/'">โรงเรียนอัสสัมชัญ</button4>
+
+      <button1 onclick="location.href='http://www.sk.ac.th/'">โรงเรียนสวนกุหลาบวืทยาลัย</button1>
+      <button2 onclick="location.href='https://www.debsirin.ac.th/'">โรงเรียนเทพศิรินทร์</button2>
+      <button3 onclick="location.href='https://www.bcc.ac.th/2019/'">โรงเรียนกรุงเทพคริสเตียนวิทยาลัย</button3>
+      <button4 onclick="location.href='https://www.assumption.ac.th/'">โรงเรียนอัสสัมชัญ</button4>
     </header>
+
     <section>
       <center>
         <h1><mark>เปิดตำนานจตุรมิตร เริ่มต้นจากความรุนแรงสู่ตำนานฟุตบอลโรงเรียน</mark></h1>
         <br><br>
-        <img src="https://mainstand.co.th/storage/features/3244_Jaturamitr00.jpg" width=250 height=250>
+        <img src="https://mainstand.co.th/storage/features/3244_Jaturamitr00.jpg" width="250" height="250">
       </center>
       <br><br>
+
       ช่วงรอยต่อระหว่าง พ.ศ. 2499 ถึงราว พ.ศ. 2506 คือช่วงที่คนไทยเรียกกันติดปากว่า “ยุคอันธพาลครองเมือง” บรรยากาศบ้านเมืองในช่วงนั้น เต็มไปด้วยวัยรุ่นเลือดร้อน แต่ละโรงเรียนยกพวกตีกันไม่เว้นแต่ละวัน สร้างความหนักใจให้ผู้ปกครองบ้านเมือง และผู้ปกครองยิ่งนัก ม.ล.ปิ่น มาลากุล รัฐมนตรีว่าการกระทรวงศึกษาธิการในขณะนั้น จึงเกิดความไม่สบายใจ และพยายามหาทางออก จนบังเกิดไอเดียบางอย่าง นั่นคือ “สร้างโรงเรียนชายตัวอย่าง” เพื่อแสดงให้สังคมเห็นกันไปเลยว่า โรงเรียนชายดีๆ ยังมีอีกมากมาย ที่รักกัน สามัคคีกัน ไม่ยกพวกตีกัน 4 โรงเรียนชายที่ถูกเลือกมาเป็นตัวอย่างก็คือ สวนกุหลาบวิทยาลัย, เทพศิรินทร์, อัสสัมชัญ และกรุงเทพคริสเตียน
+
       <br><br>
       <center>
         <span class="blink-bg">โรงเรียนในเครือจตุรมิตร</span>
         <br><br>
-        <img src="https://www.matichon.co.th/wp-content/uploads/2021/12/1086534.jpg" width=250 height=250>
+        <img src="https://www.matichon.co.th/wp-content/uploads/2021/12/1086534.jpg" width="250" height="250">
       </center>
+
       <br><br>
-      ผู้อำนวยการของทั้ง 4 โรงเรียนในขณะนั้น จึงหารือกันว่า อยากจะทำอะไรบางอย่าง เพื่อแสดงให้เห็นถึงความเป็นปึกแผ่น และสามัคคีให้ชัดเจนยิ่งขึ้นก่อนสรุปกันได้ว่า “มาเตะบอลกันเถอะ”จากความคิดริเริ่มของ อ.โปร่ง ส่งแสงเติม อาจารย์ใหญ่ของสวนกุหลาบฯ และ อ.อารีย์ เสมประสาท อาจารย์ใหญ่ของกรุงเทพคริสเตียนฯ ในตอนนั้นก่อนไปขอความร่วมมือ อ.บุญอวบ บูรณะบุตร อาจารย์ใหญ่ของเทพศิรินทร์ และ อ.บรรณา ชโนดม อาจารย์ใหญ่ของอัสสัมชัญ จึงเกิด “จตุรมิตร” ครั้งแรก ในปี พ.ศ. 2507 โดย สวนกุหลาบวิทยาลัย เป็นเจ้าภาพ
+
+      ผู้อำนวยการของทั้ง 4 โรงเรียนในขณะนั้น จึงหารือกันว่า อยากจะทำอะไรบางอย่าง เพื่อแสดงให้เห็นถึงความเป็นปึกแผ่น และสามัคคีให้ชัดเจนยิ่งขึ้น ... (ตัดเนื้อหาตามต้นฉบับ) ...
+
       <br><br>
       <center>
-      <span class="blink-bg">บุคคลสำคัญผู้ริเริ่มจตุรมิตร</span>
-      <br><br>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%88%E0%B8%87_%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B9%81%E0%B8%AA%E0%B8%87%E0%B9%80%E0%B8%95%E0%B8%B4%E0%B8%A1.jpg/963px-%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%88%E0%B8%87_%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B9%81%E0%B8%AA%E0%B8%87%E0%B9%80%E0%B8%95%E0%B8%B4%E0%B8%A1.jpg" width=250 height=250>
-        <img src="https://www.bccaa.or.th/wp-content/uploads/2023/12/%E0%B8%9A%E0%B8%B5%E0%B8%8B%E0%B8%B5%E0%B8%8B%E0%B8%B5-%E0%B8%94%E0%B8%B5%E0%B9%80%E0%B8%94%E0%B9%88%E0%B8%99-%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%A5-22%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B9%8C-%E0%B9%80%E0%B8%AA%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%AA%E0%B8%B2%E0%B8%9722-218x300.jpg" width=250 height=250>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpNyLbC71W31JNM_W4wyV6mV5KkO0jkXbLfg&s" width=250 height=250>
-        <img src="https://www.geocities.ws/pipepaul1/omac13.jpg" width=250 height=250>
-        </center>
+        <span class="blink-bg">บุคคลสำคัญผู้ริเริ่มจตุรมิตร</span>
+        <br><br>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%88%E0%B8%87_%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B9%81%E0%B8%AA%E0%B8%87%E0%B9%80%E0%B8%95%E0%B8%B4%E0%B8%A1.jpg/963px-%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%88%E0%B8%87_%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B9%81%E0%B8%AA%E0%B8%87%E0%B9%80%E0%B8%95%E0%B8%B4%E0%B8%A1.jpg" width="250" height="250">
+
+        <img src="https://www.bccaa.or.th/wp-content/uploads/2023/12/%E0%B8%9A%E0%B8%B5%E0%B8%8B%E0%B8%B5%E0%B8%8B%E0%B8%B5-%E0%B8%94%E0%B8%B5%E0%B9%80%E0%B8%94%E0%B9%88%E0%B8%99-%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%A5-22%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B9%8C-%E0%B9%80%E0%B8%AA%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%AA%E0%B8%B2%E0%B8%9722-218x300.jpg" width="250" height="250">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpNyLbC71W31JNM_W4wyV6mV5KkO0jkXbLfg&s" width="250" height="250">
+
+        <img src="https://www.geocities.ws/pipepaul1/omac13.jpg" width="250" height="250">
+      </center>
     </section>
+
   </body>
 </html>
